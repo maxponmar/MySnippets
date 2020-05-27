@@ -1,0 +1,17 @@
+snippet psycopg2 "Create initial code for psycopg2" b
+import psycopg2 as db
+
+conexion = db.connect(user='postgres',
+                    password='admin',
+                    host='127.0.0.1',
+                    port='5432',
+                    database='test_db')
+
+cursor = conexion.cursor()
+sentencia = '$1'
+
+$2
+
+cursor.close()
+conexion.close()
+endsnippet

@@ -1,0 +1,104 @@
+snippet tbf "bold text"
+\textbf{$1} $2
+endsnippet
+
+snippet tit "italic text"
+\textit{$1} $2
+endsnippet
+
+snippet tul "Underlined text"
+\underline{$1} $2
+endsnippet
+
+snippet tst "Incorrect sentence"
+\textst{$1} $2
+endsnippet
+
+snippet begin "begin"
+\begin{$1}
+	$2
+\end{$1}
+endsnippet
+
+snippet center "Begin center"
+\begin{center}
+	$1
+\end{center}
+endsnippet
+
+snippet example "Write an example"
+\begin{center}
+	\textit{$1}
+\end{center}
+endsnippet
+
+snippet eg "In-line example""
+e.g. \textit{$1} $2
+endsnippet
+
+snippet table "Create a table"
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{$1}
+	\hline
+	$4
+\end{tabular}
+\end{center}
+\caption{$2} \label{tab:$3}
+\end{table}
+
+endsnippet
+
+snippet it "Item"
+\item $1
+endsnippet
+
+snippet section "Create a section"
+\section{$1}
+$2
+endsnippet
+
+snippet subsection "Create a subsection"
+\subsection{$1}
+$2
+endsnippet
+
+snippet subsubsection "Create a subsubsection"
+\subsubsection{$1}
+$2
+endsnippet
+
+snippet inline "Inline text"
+\inline{$1}{$2}
+endsnippet
+
+snippet itemize "Create itemize section"
+\begin{itemize}
+	\item $1
+\end{itemize}
+endsnippet
+
+snippet hl "Horizontal line"
+\hline $1
+endsnippet
+
+snippet image "Insert an image" b
+\begin{figure}[h]
+	\centering
+	\begin{center}
+	\includegraphics[width=$1\linewidth]{$2}
+	\end{center}
+	\caption{$3}\label{Fig:$4}
+\end{figure}
+$5
+endsnippet
+
+snippet hl "horizontal line" b
+\hline $1
+endsnippet
+
+snippet enumAlph "Description" b
+\begin{enumerate}[label=(\alph*)]
+	\item $1
+\end{enumerate}
+endsnippet

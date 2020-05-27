@@ -1,0 +1,50 @@
+snippet initC "Create basic C initialization code" b
+#include <stdio.h>
+
+int main()
+{
+	$1
+	return 0;
+}
+endsnippet
+
+snippet initCpp "Create basic C++ initialization code" b
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	$1
+	return 0;
+}
+endsnippet
+
+snippet STRUCT "Create an structure"
+struct $1
+{
+	$2
+};
+endsnippet
+
+snippet VF "Create Void Function"
+void $1($2)
+{
+	$3
+}
+endsnippet
+
+snippet IF "Description" b
+int $1($2)
+{
+	$3
+	return $4;
+}
+endsnippet
+
+snippet CLASS "Create a class" b
+class $1
+{
+	$2
+};
+endsnippet

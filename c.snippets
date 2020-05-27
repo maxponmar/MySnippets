@@ -1,0 +1,44 @@
+snippet init "Basic code initialization for C/C++ programs" b
+#include <stdio.h>
+
+int main()
+{
+	$1
+
+	return 0;
+}
+endsnippet
+
+snippet STRUCT "Create an structure"
+struct $1
+{
+	$2
+};
+endsnippet
+
+snippet VF "Create Void Function"
+void $1($2)
+{
+	$3
+}
+endsnippet
+
+snippet IF "Create Int Function" b
+int $1($2)
+{
+	$3
+	return $4;
+}
+endsnippet
+
+snippet DF "Create Double Function" b
+double $1($2)
+{
+	$3
+	return $4;
+}
+endsnippet
+
+snippet printf "Print message" b
+printf($1);
+endsnippet
